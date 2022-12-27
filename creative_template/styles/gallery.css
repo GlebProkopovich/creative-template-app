@@ -1,0 +1,258 @@
+.gallery-container {
+  max-width: 1505px;
+  margin: 0 auto 130px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 378px);
+}
+
+.gallery-container__img {
+  max-width: 377px;
+  position: relative;
+}
+
+.gallery-container__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gallery-container__img .gallery-container__hover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(237, 215, 137, 0.9)), to(rgba(233, 130, 131, 0.9)));
+  background: -o-linear-gradient(bottom, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.gallery-container__img .gallery-container__hover img {
+  width: 42px;
+  height: 42px;
+  margin: 120px 0 55px;
+}
+
+.gallery-container__img .gallery-container__hover h3 {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.gallery-container__img .gallery-container__hover h4 {
+  height: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+.gallery-container__img:hover .gallery-container__hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.gallery-container__img:active .gallery-container__hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d9ae94), color-stop(#ffcb69), to(#d08c60));
+  background: -o-linear-gradient(#d9ae94, #ffcb69, #d08c60);
+  background: linear-gradient(#d9ae94, #ffcb69, #d08c60);
+  opacity: 1;
+}
+
+.gallery-container__img3 {
+  max-width: 377px;
+  grid-column: 3/4;
+  grid-row: 1/3;
+  position: relative;
+}
+
+.gallery-container__img3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gallery-container__img3 .gallery-container__hover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(237, 215, 137, 0.9)), to(rgba(233, 130, 131, 0.9)));
+  background: -o-linear-gradient(bottom, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.gallery-container__img3 .gallery-container__hover img {
+  width: 42px;
+  height: 42px;
+  margin: 250px 0 55px;
+}
+
+.gallery-container__img3 .gallery-container__hover h3 {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.gallery-container__img3 .gallery-container__hover h4 {
+  height: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+.gallery-container__img3:hover .gallery-container__hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.gallery-container__img3:active .gallery-container__hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d9ae94), color-stop(#ffcb69), to(#d08c60));
+  background: -o-linear-gradient(#d9ae94, #ffcb69, #d08c60);
+  background: linear-gradient(#d9ae94, #ffcb69, #d08c60);
+  opacity: 1;
+}
+
+@media screen and (max-width: 1100px) {
+  .gallery-container {
+    max-width: 1024px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 256px);
+    margin-bottom: 40px;
+  }
+
+  .gallery-container__img .gallery-container__hover img {
+    width: 28px;
+    height: 28px;
+    margin: 70px 0 40px;
+  }
+
+  .gallery-container__img .gallery-container__hover h3 {
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+  }
+
+  .gallery-container__img .gallery-container__hover h4 {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+  }
+
+  .gallery-container__img3 .gallery-container__hover img {
+    width: 28px;
+    height: 28px;
+    margin: 170px 0 40px;
+  }
+
+  .gallery-container__img3 .gallery-container__hover h3 {
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+  }
+
+  .gallery-container__img3 .gallery-container__hover h4 {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gallery-container {
+    max-width: 320px;
+    margin: 0 auto 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 150px);
+  }
+
+  .gallery-container__img .gallery-container__hover img {
+    width: 25px;
+    height: 25px;
+    margin: 30px 0 15px;
+  }
+
+  .gallery-container__img .gallery-container__hover h3 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .gallery-container__img .gallery-container__hover h4 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+  }
+
+  .gallery-container__img3 {
+    max-width: 165px;
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  .gallery-container__img3 .gallery-container__hover img {
+    width: 25px;
+    height: 25px;
+    margin: 130px 0 30px;
+  }
+
+  .gallery-container__img3 .gallery-container__hover h3 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .gallery-container__img3 .gallery-container__hover h4 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+  }
+
+  .gallery-container__img:nth-of-type(6) {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+}

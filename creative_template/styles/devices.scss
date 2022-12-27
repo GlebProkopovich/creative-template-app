@@ -1,0 +1,216 @@
+.devices-container {
+  background: url(../images/devices-bg2.png), url(../images/devices-bg.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 90px;
+  height: 840px;
+
+  .devices-subcontainer {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    h4 {
+      height: 80px;
+      line-height: 80px;
+      font-family: 'Kaushan Script', sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      text-align: center;
+      color: rgba(45, 48, 51, 1);
+    }
+
+    h3 {
+      height: 80px;
+      line-height: 80px;
+      font-weight: 900;
+      font-size: 36px;
+      text-align: center;
+      color: rgba(45, 48, 51, 1);
+      margin-bottom: 25px;
+    }
+
+    &__separator {
+      width: 170px;
+      margin: 0 auto 60px;
+      border: 0.5px solid rgba(243, 130, 129, 1);
+    }
+
+    &__images {
+      max-width: 720px;
+      height: 550px;
+      margin: 0 auto 60px;
+      position: relative;
+
+      .tablet__display {
+        width: 710px;
+        height: 540px;
+        position: absolute;
+        object-fit: cover;
+        z-index: 1;
+        top: 2%;
+        left: 1%;
+        border-radius: 10%;
+      }
+
+      .tablet__wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        z-index: 2;
+      }
+
+      .devices-subcontainer__phone {
+        max-width: 200px;
+        height: 420px;
+        position: relative;
+        left: 75%;
+        top: 40%;
+
+        .phone__display {
+          width: 100%;
+          height: 400px;
+          position: absolute;
+          object-fit: cover;
+          border-radius: 15%;
+          z-index: 2;
+        }
+
+        .phone__wrapper {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          object-fit: cover;
+          z-index: 3;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .devices-container {
+    margin-top: 60px;
+    height: 570px;
+
+    .devices-subcontainer {
+      max-width: 800px;
+
+      h4 {
+        height: 55px;
+        line-height: 55px;
+        font-size: 24px;
+      }
+
+      h3 {
+        height: 55px;
+        line-height: 55px;
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      &__separator {
+        width: 150px;
+        margin: 0 auto 40px;
+      }
+
+      &__images {
+        max-width: 480px;
+        height: 360px;
+        margin: 0 auto 40px;
+
+        .tablet__display {
+          width: 470px;
+          height: 350px;
+          top: 3%;
+          left: 2%;
+        }
+
+        .devices-subcontainer__phone {
+          max-width: 135px;
+          height: 290px;
+          left: 75%;
+          top: 40%;
+
+          .phone__display {
+            width: 100%;
+            height: 280px;
+            border-radius: 15%;
+            left: 1%;
+          }
+
+          .phone__wrapper {
+            width: 140px;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            z-index: 3;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .devices-container {
+    margin-top: 100px;
+    height: 415px;
+
+    .devices-subcontainer {
+      max-width: 288px;
+
+      h4 {
+        font-size: 30px;
+      }
+
+      h3 {
+        font-size: 36px;
+        margin-bottom: 25px;
+      }
+
+      &__separator {
+        margin: 0 auto 35px;
+      }
+
+      &__images {
+        max-width: 290px;
+        height: 220px;
+
+        .tablet__display {
+          width: 285px;
+          height: 215px;
+          top: 3%;
+          left: 1%;
+          border-radius: 10%;
+        }
+
+        .tablet__wrapper {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          object-fit: cover;
+          z-index: 2;
+        }
+
+        .devices-subcontainer__phone {
+          max-width: 90px;
+          height: 185px;
+          left: 61%;
+          top: 40%;
+
+          .phone__display {
+            width: 87px;
+            height: 180px;
+            left: 2%;
+          }
+
+          .phone__wrapper {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
